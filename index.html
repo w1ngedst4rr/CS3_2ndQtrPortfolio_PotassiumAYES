@@ -1,43 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Leian Sandhel A. Portfolio!</title>
-  <style>
-    body {
-      background-color: #f3e8ff;
-      font-family: Arial, sans-serif;
-    }
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <title>Minecraft Adventure Guide - Launchpad</title>
 
-    .main-section {
-      background-color: #d9b8ff;
-      padding: 40px;
-      border-radius: 10px;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: white;
+            
+            background-image: url('https://wallpapers.com/images/hd/minecraft-background-cfljc4haleghnajo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-    .link-button {
-      background-color: #a259ff;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 8px;
-      display: inline-block;
-      margin: 10px 0;
-    }
+        .welcome-container {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 12px;
+            margin-bottom: 40px;
+            max-width: 90%;
+            margin-top: 30vh;
+            border: 4px solid #fff;
+            text-align: center;
+        }
 
-    .link-button:hover {
-      background-color: #9136ff;
-    }
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.1em;
+            margin-top: 0;
+            text-shadow: 4px 4px 0px #000;
+            line-height: 1.4;
+            color: #FFFFFF;
+        }
+        
+        .welcome-container p {
+            font-size: 0.9em;
+            text-shadow: 1px 1px 1px #000;
+        }
 
-    .note {
-      font-size: 14px;
-      color: #333;
-      margin-top: 40px;
-      line-height: 1.4;
-    }
-  </style>
+        .button-grid {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 30px;
+            justify-content: center;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 10px;
+        }
+
+        .subtopic-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1; 
+            min-width: 150px;
+            height: 120px;
+            
+            padding: 10px;
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            border: 4px solid #FFFFFF;
+            border-radius: 8px;
+            
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.3em;
+            text-align: center;
+            text-transform: uppercase;
+            
+            transition: transform 0.2s;
+            box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.8);
+            position: relative;
+        }
+        
+        .subtopic-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .subtopic-button span {
+            z-index: 2;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+
+        .subtopic-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.8);
+            border-color: #3cb371;
+        }
+        
+        @media (max-width: 600px) {
+            .button-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .subtopic-button {
+                width: 80%;
+                max-width: 300px;
+                height: 120px;
+            }
+            h1 {
+                font-size: 1.1em;
+            }
+        }
+        
+        footer { display: none; }
+    </style>
 </head>
-<body>
 
-  <div class="main-section">
-    <h1>Links to Leian's Work - 9 Potassium <3</h1>
+<body>
+    
+    <div class="welcome-container">
+        <h1>Minecraft Fundamentals:<br>Your Essential Survival and Creation Guide</h1>
+        <p>The best straightforward guide focused on the core mechanics and general knowledge.</p>
+        <p>Choose a topic to begin your journey!</p>
+    </div>
+
+    <div class="button-grid">
+        
+        <a href="builds.html" class="subtopic-button" style="background-image: url('https://static.planetminecraft.com/files/image/minecraft/project/2020/731/13095604_m.jpg');">
+            <span>Builds</span>
+        </a>
+        
+        <a href="crafting_page.html" class="subtopic-button" style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.Ie4HEq1Oaq1TIoeyvtlDTAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');">
+            <span>Crafting</span>
+        </a>
+        
+        <a href="mining.html" class="subtopic-button" style="background-image: url('https://tse2.mm.bing.net/th/id/OIP.Ctx3vHTOdRUqWaIrwwG4FAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');">
+            <span>Mining</span>
+        </a>
+        
+        <a href="mobs.html" class="subtopic-button" style="background-image: url('https://tse2.mm.bing.net/th/id/OIP.BK4HztfMi5WgHWKNRbDiZAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');">
+            <span>Mobs</span>
+        </a>
+    </div>
+
+</body>
+</html>
