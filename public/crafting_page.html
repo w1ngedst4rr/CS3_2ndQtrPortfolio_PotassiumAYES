@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Minecraft Crafting Guide</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <title>Minecraft Crafting Guide</title>
+    <meta name="description" content="A beginner's guide to essential Minecraft crafting recipes, tools, and survival basics.">
+    <meta name="author" content="AYES, Leian Sandhel A.">
+    
     <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Inter', Arial, sans-serif;
@@ -19,7 +25,7 @@
             min-height: 100vh;
         }
 
-        .navbar {
+        header {
             position: fixed;
             top: 0;
             left: 0;
@@ -32,7 +38,7 @@
             z-index: 1000;
         }
 
-        .navbar a {
+        header a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
@@ -42,7 +48,7 @@
             transition: background-color 0.3s;
         }
 
-        .navbar a:hover {
+        header a:hover {
             background-color: #555;
         }
         
@@ -181,7 +187,7 @@
             height: 100%;
         }
 
-        .footer {
+        footer {
             background-color: #333;
             color: white;
             text-align: center;
@@ -190,18 +196,18 @@
             margin-top: 20px;
         }
 
-        .footer a {
+        footer a {
             color: #f7931e;
             text-decoration: none;
             margin: 0 10px;
         }
 
-        .footer a:hover {
+        footer a:hover {
             text-decoration: underline;
         }
 
         @media (max-width: 600px) {
-            .navbar a {
+            header a {
                 padding: 10px 8px;
                 font-size: 10px;
             }
@@ -224,17 +230,19 @@
 
 <body>
 
-    <div class="navbar">
+    <header>
+      <nav aria-label="Minecraft Subtopics">
         <a href="https://w1ngedst4rr.github.io/CS3_2ndQtrPortfolio_PotassiumAYES/public/2Q1GPotassiumAyes.html">HOME</a>
         <a href="https://whosmikhail.github.io/CS3_2ndQtrPortfolioPotassiumGO/public/2Q1GPotassiumGo.html">BUILDS</a>
-        <a href="crafting_page.html">CRAFTING</a>
+        <a href="crafting_page.html" aria-current="page">CRAFTING</a>
         <a href="https://jigglybuff19.github.io/CS3_2ndtQtrPortfolio/public/2GQ1PotassiumGalo.html">MINING</a>
         <a href="https://monty-404.github.io/CS3_2ndQtrPortfolio/public/2GQ1PotassiumMonterola.html">MOBS</a>
-    </div>
+      </nav>
+    </header>
 
     <div class="site-icon"></div>
 
-    <div class="content-container">
+    <main class="content-container">
 
         <h1>Essential Crafting Guide</h1>
         <p class="subtitle">The best starter crafting guide for beginners.</p>
@@ -308,26 +316,29 @@
                     allowfullscreen></iframe>
         </div>
 
-    </div>
+    </main>
 
     <div class="references-container">
-        <h2>References
-            </h2>
+        <h2>References</h2>
         <ul>
             <li>Mojang Studios. (2025). Minecraft. Mojang Studios </li>
-            <li>The Official Minecraft Wiki. <a href="https://minecraft.wiki/" target="_blank">https://minecraft.wiki/</a></li>
-            <li>Crafting table texture <a href="https://i.pinimg.com/originals/5c/58/38/5c583886ba55a92b9d783bb2ac059869.jpg" target="_blank">https://i.pinimg.com/originals/5c/58/38/5c583886ba55a92b9d783bb2ac059869.jpg</a></li>
-            <li>Site Icon / Favicon <a href="https://i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg" target="_blank">https://i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg</a></li>
-            <li>YouTube. (2025). Minecraft crafting tutorial <a href="https://www.youtube.com/embed/cyekIFf2vGw" target="_blank">https://www.youtube.com/embed/cyekIFf2vGw</a></li>
+            <li>The Official Minecraft Wiki. <a href="https://minecraft.wiki/" target="_blank" rel="noopener noreferrer">https://minecraft.wiki/</a></li>
+            <li>Crafting table texture <a href="https://i.pinimg.com/originals/5c/58/38/5c583886ba55a92b9d783bb2ac059869.jpg" target="_blank" rel="noopener noreferrer">https://i.pinimg.com/originals/5c/58/38/5c583886ba55a92b9d783bb2ac059869.jpg</a></li>
+            <li>Site Icon / Favicon <a href="https://i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg" target="_blank" rel="noopener noreferrer">https://i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg</a></li>
+            <li>YouTube. (2025). Minecraft crafting tutorial <a href="https://www.youtube.com/embed/cyekIFf2vGw" target="_blank" rel="noopener noreferrer">https://www.youtube.com/embed/cyekIFf2vGw</a></li>
         </ul>
     </div>
 
-    <div class="footer">
-        © 2025 Minecraft Guide (AYES)
-        <br>
-        <a href="https://minecraft.wiki/" target="_blank">Official Minecraft Wiki</a> | 
-        <a href="https://www.minecraft.net/" target="_blank">Mojang Studios</a>
-    </div>
+    <footer>
+        <p class="copyright">
+            &copy; <span id="year">2025</span> Minecraft Guide (AYES). All rights reserved.
+        </p>
+        <a href="https://minecraft.wiki/" target="_blank" rel="noopener noreferrer">Official Minecraft Wiki</a> | 
+        <a href="https://www.minecraft.net/" target="_blank" rel="noopener noreferrer">Mojang Studios</a>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
 
 </body>
 </html>
