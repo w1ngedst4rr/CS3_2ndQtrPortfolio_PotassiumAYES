@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg">
     
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     
-    <title>Minecraft Adventure Guide - Launchpad</title>
+    <title>Minecraft Homepage</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,16 +34,16 @@
             border-radius: 12px;
             margin-bottom: 40px;
             max-width: 90%;
-            margin-top: 30vh;
+            margin-top: 32vh;
             border: 4px solid #fff;
             text-align: center;
         }
 
         h1 {
             font-family: 'Press Start 2P', cursive;
-            font-size: 1.1em;
+            font-size: 1.5em;
             margin-top: 0;
-            text-shadow: 4px 4px 0px #000;
+            text-shadow: 4px 4px 0px #000, 0 0 8px #f7931e; 
             line-height: 1.4;
             color: #FFFFFF;
         }
@@ -60,11 +60,13 @@
             justify-content: center;
             width: 100%;
             max-width: 900px;
-            margin-top: 10px;
+            margin-top: 10px; 
+            margin-bottom: 20px; 
         }
 
         .subtopic-button {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             flex-grow: 1; 
@@ -99,14 +101,25 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.5); 
             border-radius: 5px;
             z-index: 1;
         }
 
-        .subtopic-button span {
+        .subtopic-button .label {
             z-index: 2;
             text-shadow: 2px 2px 4px #000;
+            font-size: 1.3em;
+            line-height: 1.2;
+        }
+        
+        .subtopic-button .name {
+            z-index: 2;
+            font-size: 0.6em;
+            font-weight: normal;
+            margin-top: 5px;
+            text-shadow: 1px 1px 2px #000;
+            color: #ccc;
         }
 
 
@@ -116,6 +129,31 @@
             border-color: #3cb371;
         }
         
+        footer {
+            margin-top: auto;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.65); 
+            color: #ddd; 
+            padding: 20px; 
+            font-size: 0.65em; 
+            line-height: 1.6; 
+            text-align: left; 
+        }
+        
+        footer a {
+            color: #7fffd4; 
+            text-decoration: underline;
+        }
+        
+        .footer-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .citation-section {
+            margin-bottom: 15px;
+        }
+
         @media (max-width: 600px) {
             .button-grid {
                 flex-direction: column;
@@ -131,7 +169,6 @@
             }
         }
         
-        footer { display: none; }
     </style>
 </head>
 
@@ -145,22 +182,68 @@
 
     <div class="button-grid">
         
-        <a href="builds.html" class="subtopic-button" style="background-image: url('https://static.planetminecraft.com/files/image/minecraft/project/2020/731/13095604_m.jpg');">
-            <span>Builds</span>
+        <a href="https://whosmikhail.github.io/CS3_2ndQtrPortfolioPotassiumGO/public/2Q1GPotassiumGo.html" target="_blank" class="subtopic-button" style="background-image: url('https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/07/best-minecraft-builds-novigrad.jpg');">
+            <span class="label">Builds</span>
+            <span class="name">GO</span>
         </a>
         
-        <a href="crafting_page.html" class="subtopic-button" style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.Ie4HEq1Oaq1TIoeyvtlDTAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');">
-            <span>Crafting</span>
+        <a href="https://w1ngedst4rr.github.io/CS3_2ndQtrPortfolio_PotassiumAYES/public/crafting_page.html" target="_blank" class="subtopic-button" style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.Ie4HEq1Oaq1TIoeyvtlDTAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');">
+            <span class="label">Crafting</span>
+            <span class="name">AYES</span>
         </a>
         
-        <a href="mining.html" class="subtopic-button" style="background-image: url('https://tse2.mm.bing.net/th/id/OIP.Ctx3vHTOdRUqWaIrwwG4FAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');">
-            <span>Mining</span>
+        <a href="https://jigglybuff19.github.io/CS3_2ndtQtrPortfolio/public/2GQ1PotassiumGalo.html" target="_blank" class="subtopic-button" style="background-image: url('https://tse2.mm.bing.net/th/id/OIP.Ctx3vHTOdRUqWaIrwwG4FAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');">
+            <span class="label">ORES</span>
+            <span class="name">GALO</span>
         </a>
         
-        <a href="mobs.html" class="subtopic-button" style="background-image: url('https://tse2.mm.bing.net/th/id/OIP.BK4HztfMi5WgHWKNRbDiZAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');">
-            <span>Mobs</span>
+        <a href="https://monty-404.github.io/CS3_2ndQtrPortfolio/public/2GQ1PotassiumMonterola.html" target="_blank" class="subtopic-button" style="background-image: url('https://tse2.mm.bing.net/th/id/OIP.BK4HztfMi5WgHWKNRbDiZAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');">
+            <span class="label">Mobs</span>
+            <span class="name">MONTEROLA</span>
         </a>
     </div>
+
+    <footer>
+        
+        <div class="citation-section">
+            <p><strong>APA Image Citations:</strong></p>
+            <p>
+                Minecraft background (Main): Background. <a href="https://wallpapers.com/images/hd/minecraft-background-cfljc4haleghnajo.jpg" target="_blank">https://wallpapers.com/images/hd/minecraft-background-cfljc4haleghnajo.jpg</a>
+            </p>
+            <p>
+                Builds Button: Best Minecraft Builds (Novigrad). (2022). <a href="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/07/best-minecraft-builds-novigrad.jpg" target="_blank">https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/07/best-minecraft-builds-novigrad.jpg</a>
+            </p>
+            <p>
+                Crafting Button: Image of Crafting Table. <a href="https://tse4.mm.bing.net/th/id/OIP.Ie4HEq1Oaq1TIoeyvtlDTAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" target="_blank">https://tse4.mm.bing.net/th/id/OIP.Ie4HEq1Oaq1TIoeyvtlDTAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3</a>
+            </p>
+            <p>
+                Mining Button: Image of Mining Scene. <a href="https://tse2.mm.bing.net/th/id/OIP.Ctx3vHTOdRUqWaIrwwG4FAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" target="_blank">https://tse2.mm.bing.net/th/id/OIP.Ctx3vHTOdRUqWaIrwwG4FAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3</a>
+            </p>
+            <p>
+                Mobs Button: Image of Mobs (Creepers). <a href="https://tse2.mm.bing.net/th/id/OIP.BK4HztfMi5WgHWKNRbDiZAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" target="_blank">https://tse2.mm.bing.net/th/id/OIP.BK4HztfMi5WgHWKNRbDiZAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3</a>
+            </p>
+        </div>
+
+        <div class="citation-section">
+            <p><strong>APA Web and Game Resources:</strong></p>
+            <p>
+                World Wide Web Consortium. _W3C standards for Web design (HTML/CSS)_. <a href="https://www.w3.org/standards/webdesign/htmlcss" target="_blank">https://www.w3.org/standards/webdesign/htmlcss</a>
+            </p>
+            <p>
+                Google. _Press Start 2P Font_. <a href="https://fonts.google.com/specimen/Press+Start+2P" target="_blank">https://fonts.google.com/specimen/Press+Start+2P</a>
+            </p>
+            <p>
+                Mojang Studios. _Minecraft Official Website_. <a href="https://www.minecraft.net/" target="_blank">https://www.minecraft.net/</a>
+            </p>
+            <p>
+                The Official Minecraft Wiki. <a href="https://minecraft.wiki/" target="_blank">https://minecraft.wiki/</a>
+            </p>
+        </div>
+        
+        <div class="footer-links">
+            <p>&copy; 2024 Minecraft Fundamentals Guide. All rights reserved by the respective contributors (GO, AYES, GALO, MONTEROLA). Minecraft is a trademark of Mojang Synergies AB.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
