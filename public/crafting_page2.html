@@ -4,168 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Minecraft Crafting Guide</title>
+    <title>Minecraft Crafting Guide - AYES</title>
     <meta name="description" content="A beginner's guide to essential Minecraft crafting recipes, tools, and survival basics.">
     <meta name="author" content="AYES, Leian Sandhel A.">
     
-    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
-    
+    <link rel="icon" type="image/png" href="https://images-ext-1.discordapp.net/external/orCnNuRyAOZX-TRMCqemEy_GQuqxW9WkZAKuZgNyqLw/https/i.pinimg.com/73x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg?format=webp&width=833&height=833">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://whosmikhail.github.io/CS3_2ndQtrPortfolioPotassiumGO/public/2Q2GPotassiumAyesGaloGoMonterola.css">
+
     <style>
+        
         body {
-            font-family: 'Inter', Arial, sans-serif;
             margin: 0;
-            padding-top: 60px;
-            color: #333333;
-            background-color: #d2b48c;
-            background-size: cover;
-            background-position: center center;
-            background-attachment: fixed;
             min-height: 100vh;
+
+            background-attachment: fixed; 
+            background-position: center center; 
+            background-size: cover; 
         }
 
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(60, 60, 60, 0.95);
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
+        .container {
+            width: 100%; 
+            max-width: none; 
+            margin: 0; 
+            padding: 20px 0 20px 0; 
+            box-sizing: border-box;
         }
 
-        header a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 14px;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-
-        header a:hover {
-            background-color: #555;
+        p, td, li, a {
+            font-family: "Pixelify Sans", sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
         }
         
-        .site-icon {
-            position: fixed;
-            top: 75px;
-            right: 20px;
-            width: 32px;
-            height: 32px;
-            background-image: url('https://i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg');
-            background-size: cover;
-            z-index: 999;
-            border-radius: 4px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        .Box p, .Box ul, .Box li {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
         }
 
-        .content-container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            min-height: calc(100vh - 120px);
+        .Box {
+             padding: 20px; 
+             box-sizing: border-box; 
+             float: none !important; 
+             margin-bottom: 20px; 
+             margin-top: 0; 
         }
 
-        .references-container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(230, 230, 230, 0.9);
-            border-radius: 8px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            font-size: 13px;
+        .header-box {
+            padding: 10px 20px 5px 20px; 
+            margin-bottom: 20px; 
         }
 
-        .references-container h2 {
-            font-family: 'Inter', Arial, sans-serif;
-            color: #4a4a4a;
-            border-bottom: 1px solid #ccc;
-            margin-bottom: 15px;
-            text-align: left;
-            padding-bottom: 5px;
-            font-size: 16px;
+        .flex-header-content {
+            display: block;
+            margin-bottom: 10px;
         }
-        .references-container ul {
-            list-style-type: none;
-            padding-left: 0;
-            color: #555;
-            text-indent: -1.5em;
-            padding-left: 1.5em;
-        }
-        .references-container li {
-            margin-bottom: 8px;
-            line-height: 1.4;
+        
+        .main-nav-box {
+            padding: 0; 
+            margin: 0; 
+            border: none; 
+            background-color: transparent; 
         }
 
-        h1 {
-            font-family: 'Press Start 2P', cursive;
-            color: #1a1a1a;
+        .horizontal-list {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
+            padding: 0;
+            margin: 10px 0; 
+            list-style: none; 
+        }
+
+        .horizontal-list li {
+            flex-grow: 1; 
+            min-width: 150px; 
+            flex-basis: auto; 
+            margin: 5px 0; 
+            box-sizing: border-box;
+            padding: 0; 
+        }
+
+        .guide-link-content {
+            border: 4px solid #260901;
+            background-color: #00000086;
+            padding: 10px; 
+            height: 100%;
+            width: 100%;
+            
+            display: flex;
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 8px; 
+            
+            transition: background-color 0.2s;
+        }
+        
+        .guide-link-content:hover {
+            background-color: #260901aa; 
+        }
+        
+        .nav-small-icon {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+            image-rendering: pixelated;
+            margin-bottom: 0; 
+            flex-shrink: 0; 
+        }
+
+        .guide-link {
+            font-size: 14px; 
+            margin: 0;
+            line-height: 1.2;
+            text-decoration: underline; 
+            text-decoration-color: #9933ff; 
+            color: #ccc; 
+            text-align: left; 
+            flex-grow: 1; 
+            
+            white-space: nowrap; 
+            overflow: hidden;    
+            text-overflow: ellipsis; 
+        }
+        
+        .guide-link-item a[aria-current="page"] .guide-link {
+             color: white !important; 
+        }
+        
+        .home-link-container {
             text-align: center;
+            padding-top: 5px;
+            margin-top: 5px;
+        }
+        .home-link {
+            font-weight: 700;
+            color: white !important; 
+            margin: 5px 0 0 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .main-heading {
+            font-family: 'Bytesized', cursive; 
+            color: white; 
+            text-align: center;
+            font-size: 24px;
             margin-top: 0;
             margin-bottom: 5px;
-            font-size: 24px;
         }
         
         .subtitle {
-            font-family: 'Inter', Arial, sans-serif;
             text-align: center;
             font-size: 16px;
-            color: #6a6a6a;
+            color: #ccc; 
             margin-top: 0;
             margin-bottom: 20px;
+            border-bottom: 2px solid #260901; 
             padding-bottom: 10px;
-            border-bottom: 2px solid #f7931e;
-        }
-        
-        h2 {
-            color: #f7931e;
-            text-align: center;
-            border-bottom: 2px solid #f7931e;
-            padding-bottom: 5px;
-            margin-top: 15px;
         }
 
-        .table-responsive {
-            overflow-x: auto;
-            margin: 20px 0;
-            border-radius: 6px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .header-subtitle {
+            font-weight: 700;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            border-bottom: none; 
+            margin-bottom: 5px;
+            padding-bottom: 0;
+            text-align: center;
         }
+
+        .Box h2 {
+            color: white; 
+            text-align: center;
+            border-bottom: 2px solid #260901; 
+            padding-bottom: 5px;
+            margin-top: 15px;
+            text-shadow: none; 
+        }
+        .references-box h2 {
+            color: white;
+            border-bottom: 2px solid #260901; 
+            margin-bottom: 15px;
+            text-align: center;
+            text-shadow: none;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            background-color: rgba(240, 240, 240, 0.95);
-            color: #333;
-        }
-
-        th, td {
-            border: 1px solid #aaa;
-            padding: 12px;
-            text-align: left;
-            font-size: 14px;
+            background-color: #e6d6c3; 
+            color: #333; 
         }
 
         th {
-            background-color: #555;
-            color: #f7931e;
+            background-color: #d0c0b0; 
+            color: #000 !important; 
             text-transform: uppercase;
+        }
+
+        th, td {
+            font-family: "Pixelify Sans", sans-serif;
+            text-shadow: none;
+            color: #333; 
         }
 
         .center-image {
             display: block;
-            max-width: 60%;
+            max-width: 80%;
             height: auto;
             margin: 20px auto;
-            border: 3px solid #f7931e;
+            border: 3px solid #260901; 
             border-radius: 4px;
         }
 
@@ -175,10 +230,10 @@
             height: 0;
             overflow: hidden;
             margin-top: 25px;
-            border: 3px solid #f7931e;
+            border: 3px solid #260901; 
             border-radius: 4px;
         }
-
+        
         .video-wrapper iframe {
             position: absolute;
             top: 0;
@@ -186,159 +241,201 @@
             width: 100%;
             height: 100%;
         }
-
+        
         footer {
-            background-color: #333;
+            background-color: #00000086;
             color: white;
-            text-align: center;
-            padding: 15px 0;
+            padding: 15px 20px;
             font-size: 12px;
-            margin-top: 20px;
+            margin: 0; 
+            text-align: center;
+            border: 4px solid #260901; 
+            width: 100%;
+            box-sizing: border-box;
         }
 
-        footer a {
-            color: #f7931e;
+        footer .copyright {
+             margin-bottom: 10px;
+             text-align: center;
+        }
+
+        .references-box a, footer a {
+            color: #c396e6 !important;
             text-decoration: none;
             margin: 0 10px;
+            font-size: 12px;
         }
-
-        footer a:hover {
+        
+        .references-box a:hover, footer a:hover {
+            color: white !important;
             text-decoration: underline;
         }
 
-        @media (max-width: 600px) {
-            header a {
-                padding: 10px 8px;
-                font-size: 10px;
-            }
 
-            .content-container {
-                margin: 10px;
-                padding: 15px;
-            }
-
-            h1 {
-                font-size: 18px;
-            }
-
-            .center-image {
-                max-width: 90%;
-            }
-        }
     </style>
 </head>
 
 <body>
+    <div class="container">
 
-    <header>
-      <nav aria-label="Minecraft Subtopics">
-        <a href="https://w1ngedst4rr.github.io/CS3_2ndQtrPortfolio_PotassiumAYES/public/2Q1GPotassiumAyes.html">HOME</a>
-        <a href="https://whosmikhail.github.io/CS3_2ndQtrPortfolioPotassiumGO/public/2Q1GPotassiumGo.html">BUILDS</a>
-        <a href="crafting_page.html" aria-current="page">CRAFTING</a>
-        <a href="https://jigglybuff19.github.io/CS3_2ndtQtrPortfolio/public/2GQ1PotassiumGalo.html">MINING</a>
-        <a href="https://monty-404.github.io/CS3_2ndQtrPortfolio/public/2GQ1PotassiumMonterola.html">MOBS</a>
-      </nav>
-    </header>
+        <div class="Box header-box">
+            <div class="Header">
+                <header>
+                    <div class="heading main-heading" style="font-size: 28px;">MINECRAFT GUIDE - CRAFTING</div>
+                </header>
 
-    <div class="site-icon"></div>
+                <p class="subtitle header-subtitle">Other Minecraft Guides:</p>
 
-    <main class="content-container">
+                <nav>
+                    <ul class="guide-list horizontal-list">
 
-        <h1>Essential Crafting Guide</h1>
-        <p class="subtitle">The best starter crafting guide for beginners.</p>
+                        <li class="guide-link-item">
+                            <a href="crafting_guide_final.html" aria-current="page">
+                                <div class="guide-link-content">
+                                     <img src="https://images-ext-1.discordapp.net/external/orCnNuRyAOZX-TRMCqemEy_GQuqxW9WkZAKuZgNyqLw/https/i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg?format=webp&width=833&height=833" alt="Crafting Icon" class="nav-small-icon" onerror="this.onerror=null;this.src='https://placehold.co/35x35/38761D/ffffff?text=C';">
+                                    <p class="guide-link" style="color: white !important;">Crafting - AYES, Leian Sandhel A.</p>
+                                </div>
+                            </a>
+                        </li>
 
-        <p>
-            Crafting is the most fundamental part of Minecraft. Without it, you can't make tools, weapons, armor, or shelter! It is the core process used to turn raw materials (like wood, stone, and iron) into the functional items you need to survive and progress. Whether you're making simple wooden planks in your inventory or complex mechanisms, every functional item in the game is made through combining materials on a grid.
-        </p>
+                        <li class="guide-link-item">
+                            <a href="https://whosmikhail.github.io/CS3_2ndQtrPortfolioPotassiumGO/public/2Q1GPotassiumGo.html">
+                                <div class="guide-link-content">
+                                    <img src="https://media.discordapp.net/attachments/1424975443521437816/1430930754002751608/Favicon.png?ex=68fc3a5d&is=68fae8dd&hm=c81b736a77c8cbf22dbbd4607bc97c034efce7955f9abc39da12c70a830f3a45&=&format=webp&quality=lossless&width=438&height=438" alt="Building Icon" class="nav-small-icon" onerror="this.onerror=null;this.src='https://placehold.co/35x35/4A86E8/ffffff?text=B';">
+                                    <p class="guide-link">Building - GO, Mikhail Rafferty</p>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="guide-link-item">
+                            <a href="https://jigglybuff19.github.io/CS3_2ndtQtrPortfolio/public/2GQ1PotassiumGalo.html">
+                                <div class="guide-link-content">
+                                    <img src="https://images-ext-1.discordapp.net/external/86cPAnjltQkxP74q0CbtOhxo9nLtJlo5jeEFklRU3P4/%3Fcb%3D12%26rs%3D1%26pid%3DImgDetMain%26o%3D7%26rm%3D3/https/tse2.mm.bing.net/th/id/OIP.SfOok77sgeAQTYXfSWnKegHaIB?format=webp&width=593&height=641" alt="Mining Icon" class="nav-small-icon" onerror="this.onerror=null;this.src='https://placehold.co/35x35/CC0000/ffffff?text=M';">
+                                    <p class="guide-link">Mining - GALO, Diego Emmanuel Isaac</p>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="guide-link-item">
+                            <a href="https://monty-404.github.io/CS3_2ndQtrPortfolio/public/2GQ1PotassiumMonterola.html">
+                                 <div class="guide-link-content">
+                                    <img src="https://media.discordapp.net/attachments/1424975443521437816/1430912109356515368/Minecraft_cube.svg.png?ex=68fc28ff&is=68fad77f&hm=5353a5a8cb7976a1811147e7d2c9c75f1c6cbe38553e4203f78e1db2991fdac7&=&format=webp&quality=lossless&width=698&height=833" alt="Mobs Icon" class="nav-small-icon" onerror="this.onerror=null;this.src='https://placehold.co/35x35/741B47/ffffff?text=M';">
+                                    <p class="guide-link">Mobs - MONTEROLA, Hans</p>
+                                </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                
+                <div class="home-link-container">
+                    <a href="https://w1ngedst4rr.github.io/CS3_2ndQtrPortfolio_PotassiumAYES/public/2Q1GPotassiumAyes.html"><p class="guide-link home-link">Visit the Homepage!</p></a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="Box">
+            <h1 class="main-heading">Essential Crafting Guide</h1>
+            <p class="subtitle">The best starter crafting guide for beginners.</p>
 
-        <p>
-            While you can make simple items like planks and sticks in your basic inventory, the Crafting Table is the single most important tool, as it unlocks the larger 3x3 grid needed for advanced recipes. The table below lists the five most crucial items you should craft on your first day of survival. These simple tools and blocks are essential because they lead directly to better equipment and provide the basic defense needed to last through the night.
-        </p>
+            <p>
+                Crafting is the most fundamental part of Minecraft. Without it, you can't make tools, weapons, armor, or shelter! It is the core process used to turn raw materials (like wood, stone, and iron) into the functional items you need to survive and progress. Whether you're making simple items like planks and sticks in your inventory or complex mechanisms, every functional item in the game is made through combining materials on a grid.
+            </p>
 
-        <img src="https://i.pinimg.com/originals/5c/58/38/5c583886ba55a92b9d783bb2ac059869.jpg" alt="A Minecraft Crafting Table" class="center-image">
+            <p>
+                While you can make simple items like planks and sticks in your basic inventory, the **Crafting Table** is the single most important tool, as it unlocks the larger 3x3 grid needed for advanced recipes. The table below lists the five most crucial items you should craft on your first day of survival. These simple tools and blocks are essential because they lead directly to better equipment and provide the basic defense needed to last through the night.
+            </p>
 
-        <h2>Top 5 Most Important Items to Craft First</h2>
-
-        <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Item Name</th>
-                        <th>Crafting Tool</th>
-                        <th>Recipe Summary</th>
-                        <th>Key Use</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Wooden Planks</td>
-                        <td>Inventory / Crafting Table</td>
-                        <td>1 Log = 4 Planks</td>
-                        <td>Used to make Sticks, Crafting Tables, and simple building blocks.</td>
-                    </tr>
-                    <tr>
-                        <td>Sticks</td>
-                        <td>Inventory / Crafting Table</td>
-                        <td>2 Planks (vertically)</td>
-                        <td>Essential for all tool handles, torches, and arrows.</td>
-                    </tr>
-                    <tr>
-                        <td>Crafting Table</td>
-                        <td>Inventory / Crafting Table</td>
-                        <td>4 Planks (in a 2x2 grid)</td>
-                        <td>Mechanism: Allows access to the full 3x3 crafting grid. This is the most important item!</td>
-                    </tr>
-                    <tr>
-                        <td>Wooden Pickaxe</td>
-                        <td>Crafting Table</td>
-                        <td>3 Planks (top row) + 2 Sticks (vertical in middle)</td>
-                        <td>Counter: Allows you to break stone blocks to get Cobblestone and upgrade your tools.</td>
-                    </tr>
-                    <tr>
-                        <td>Torches</td>
-                        <td>Crafting Table</td>
-                        <td>1 Coal / Charcoal + 1 Stick</td>
-                        <td>Used to light up dark areas (mines and caves) to stop hostile mobs from spawning.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <img src="https://i.pinimg.com/originals/5c/58/38/5c583886ba55a92b9d783bb2ac059869.jpg" alt="A Minecraft Crafting Table" class="center-image">
         </div>
 
-        <h2>Video Explanation: The Crafting Basics</h2>
-        <p>
-            Watch this short video if you need a visual guide on how to open the crafting menu and create your first few items.
-        </p>
-        <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/cyekIFf2vGw" 
-                    title="Minecraft Crafting Tutorial" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
+        <div class="Box">
+            <h2>Top 5 Most Important Items to Craft First</h2>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Crafting Tool</th>
+                            <th>Recipe Summary</th>
+                            <th>Key Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Wooden Planks</td>
+                            <td>Inventory / Crafting Table</td>
+                            <td>1 Log = 4 Planks</td>
+                            <td>Used to make Sticks, Crafting Tables, and simple building blocks.</td>
+                        </tr>
+                        <tr>
+                            <td>Sticks</td>
+                            <td>Inventory / Crafting Table</td>
+                            <td>2 Planks (vertically)</td>
+                            <td>Essential for all tool handles, torches, and arrows.</td>
+                        </tr>
+                        <tr>
+                            <td>Crafting Table</td>
+                            <td>Inventory / Crafting Table</td>
+                            <td>4 Planks (in a 2x2 grid)</td>
+                            <td>Mechanism: Allows access to the full 3x3 crafting grid. This is the most important item!</td>
+                        </tr>
+                        <tr>
+                            <td>Wooden Pickaxe</td>
+                            <td>Crafting Table</td>
+                            <td>3 Planks (top row) + 2 Sticks (vertical in middle)</td>
+                            <td>Counter: Allows you to break stone blocks to get Cobblestone and upgrade your tools.</td>
+                        </tr>
+                        <tr>
+                            <td>Torches</td>
+                            <td>Crafting Table</td>
+                            <td>1 Coal / Charcoal + 1 Stick</td>
+                            <td>Used to light up dark areas (mines and caves) to stop hostile mobs from spawning.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-    </main>
+        <div class="Box">
+            <h2>Video Explanation: The Crafting Basics</h2>
+            <p>
+                Watch this short video if you need a visual guide on how to open the crafting menu and create your first few items.
+            </p>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/cyekIFf2vGw" 
+                        title="Minecraft Crafting Tutorial" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+        </div>
 
-    <div class="references-container">
-        <h2>References</h2>
-        <ul>
-            <li>Mojang Studios. (2025). Minecraft. Mojang Studios </li>
-            <li>The Official Minecraft Wiki. <a href="https://minecraft.wiki/" target="_blank" rel="noopener noreferrer">https://minecraft.wiki/</a></li>
-            <li>Crafting table texture <a href="https://i.pinimg.com/originals/5c/58/38/5c583886ba55a92b9d783bb2ac059869.jpg" target="_blank" rel="noopener noreferrer">https://i.pinimg.com/originals/5c/58/38/5c583886ba55a92b9d783bb2ac059869.jpg</a></li>
-            <li>Site Icon / Favicon <a href="https://i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg" target="_blank" rel="noopener noreferrer">https://i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg</a></li>
-            <li>YouTube. (2025). Minecraft crafting tutorial <a href="https://www.youtube.com/embed/cyekIFf2vGw" target="_blank" rel="noopener noreferrer">https://www.youtube.com/embed/cyekIFf2vGw</a></li>
-        </ul>
+        <div class="references-box Box">
+            <h2>References</h2>
+            <ul>
+                <li>Mojang Studios. (2025). Minecraft. Mojang Studios </li>
+                <li>The Official Minecraft Wiki. <a href="https://minecraft.wiki/" target="_blank" rel="noopener noreferrer">https://minecraft.wiki/</a></li>
+                <li>Crafting table texture <a href="https://i.pinimg.com/originals/5c/58/38/5c583886ba55a92b9d783bb2ac059869.jpg" target="_blank" rel="noopener noreferrer">https://i.pinimg.com/originals/5c/58/38/5c583886ba55a92b9d783bb2ac059869.jpg</a></li>
+                <li>Site Icon / Favicon <a href="https://images-ext-1.discordapp.net/external/orCnNuRyAOZX-TRMCqemEy_GQuqxW9WkZAKuZgNyqLw/https/i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg?format=webp&width=833&height=833" target="_blank" rel="noopener noreferrer">https://images-ext-1.discordapp.net/external/orCnNuRyAOZX-TRMCqemEy_GQuqxW9WkZAKuZgNyqLw/https/i.pinimg.com/736x/1b/6f/8e/1b6f8e4d67a75ae3514c73567b0464ef.jpg?format=webp&width=833&height=833</a></li>
+                <li>YouTube. (2025). Minecraft crafting tutorial <a href="https://www.youtube.com/embed/cyekIFf2vGw" target="_blank" rel="noopener noreferrer">https://www.youtube.com/embed/cyekIFf2vGw</a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p class="copyright">
+                &copy; <span id="year">2025</span> Minecraft Guide (AYES). All rights reserved.
+            </p>
+            <a href="https://minecraft.wiki/" target="_blank" rel="noopener noreferrer">Official Minecraft Wiki</a> | 
+            <a href="https://www.minecraft.net/" target="_blank" rel="noopener noreferrer">Mojang Studios</a>
+            <script>
+                document.getElementById('year').textContent = new Date().getFullYear();
+            </script>
+        </footer>
+
     </div>
-
-    <footer>
-        <p class="copyright">
-            &copy; <span id="year">2025</span> Minecraft Guide (AYES). All rights reserved.
-        </p>
-        <a href="https://minecraft.wiki/" target="_blank" rel="noopener noreferrer">Official Minecraft Wiki</a> | 
-        <a href="https://www.minecraft.net/" target="_blank" rel="noopener noreferrer">Mojang Studios</a>
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
-    </footer>
 
 </body>
 </html>
