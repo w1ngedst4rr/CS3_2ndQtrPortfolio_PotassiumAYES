@@ -14,34 +14,39 @@ body {
 .card {
   background-color: rgba(255, 255, 255, 0.9);
   border: 2px solid #c4a1ff;
-  border-radius: 15px;
-  padding: 30px;
+  border-radius: 20px;
+  padding: 40px 30px;
   text-align: center;
-  width: 350px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: background-color 0.4s ease, transform 0.3s ease;
 }
 
-.card h1 {
-  font-size: 28px;
-  color: #6a0dad;
-  letter-spacing: 1px;
-  font-weight: 600;
+.sparkles {
+  color: #b185ff;
+  font-size: 18px;
+  font-family: "Courier New", monospace;
+  letter-spacing: 2px;
+  margin: 10px 0;
 }
 
-.card h2 {
-  font-size: 20px;
-  color: #8753e0;
-  font-style: italic;
+.card h1 {
+  font-size: 32px;
+  color: #6a0dad;
+  font-family: "Brush Script MT", cursive;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
 }
 
 .card p {
-  font-size: 16px;
-  color: #333333;
-  line-height: 1.5;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
 }
 
 .card:hover {
   background-color: rgba(233, 213, 255, 0.95);
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(106, 13, 173, 0.2);
 }
